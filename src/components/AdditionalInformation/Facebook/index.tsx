@@ -4,21 +4,22 @@ export const Facebook = () => {
   return (
     <div className={styles.container}>
       <div
-        className="fb-page"
+        className={`${styles.facebookPage} fb-page`}
         data-href="https://www.facebook.com/facebook"
         data-tabs="timeline"
-        data-width=""
-        data-height="500px"
+        data-width="500"
+        // data-height="500"
         data-small-header="false"
         data-adapt-container-width="true"
         data-hide-cover="false"
         data-show-facepile="true"
+        data-lazy="true"
       >
         <blockquote
           cite="https://www.facebook.com/facebook"
           className="fb-xfbml-parse-ignore"
         >
-          <a href="https://www.facebook.com/facebook">Meta</a>
+          <a href="https://www.facebook.com/facebook">Citbus</a>
         </blockquote>
       </div>
     </div>
