@@ -1,0 +1,43 @@
+.container {
+  height: 130px;
+  padding: 0 100px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    width: 350px;
+    height: 100%;
+    position: relative;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .optionsMenu {
+    ul {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+
+      li {
+        list-style: none;
+        padding: 0 5px 10px 5px;
+        border-bottom: 2px solid #000;
+        cursor: pointer;
+
+        &:not(.active):hover {
+          border-color: #bbb;
+        }
+
+        &.active {
+          color: #aa9043;
+          border-color: #aa9043;
+        }
+      }
+    }
+  }
+}

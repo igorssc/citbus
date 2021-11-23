@@ -1,0 +1,18 @@
+.container {
+  background: #25bdb8;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 100px;
+
+  > header {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}

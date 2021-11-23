@@ -1,0 +1,23 @@
+.container {
+  max-width: 1120px;
+  margin: 80px auto;
+
+  h1 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+  }
+
+  .partners {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+
+    img {
+      width: calc(100% - 80px);
+      object-fit: contain;
+      margin: auto;
+    }
+  }
+}

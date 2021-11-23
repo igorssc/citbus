@@ -1,0 +1,15 @@
+.container {
+  background: #25d366;
+  position: fixed;
+  padding: 20px;
+  border-radius: 100%;
+  bottom: 30px;
+  right: 30px;
+  z-index: 999999;
+  border: 2px solid #fff;
+  cursor: pointer;
+
+  .icon {
+    filter: invert(1);
+  }
+}
