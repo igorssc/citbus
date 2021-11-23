@@ -7,5 +7,18 @@
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+
+    > div:nth-child(1) {
+      h2 {
+        margin: 30px 0;
+        font-size: 1.2rem;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+    }
   }
 }

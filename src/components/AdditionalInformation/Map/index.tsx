@@ -4,7 +4,7 @@ import styles from './styles.module.scss'
 
 const containerStyle = {
   width: '400px',
-  height: '400px'
+  height: '500px'
 }
 
 const center = {

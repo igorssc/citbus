@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
-import sustainabilityEcology from '../../assets/sustainability-ecology.png'
+import sustainabilityEcology from '../../assets/sustainability_ecology.png'
 import styles from './styles.module.scss'
 
 type OurDifferencesProps = {
