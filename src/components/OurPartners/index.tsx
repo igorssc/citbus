@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import styles from './styles.module.scss'
 
 export const OurPartners = () => {
@@ -24,7 +25,13 @@ export const OurPartners = () => {
       <h1>Empresas que confiam em nossos serviços</h1>
       <div className={styles.partners}>
         {partnersImg.map(partner => (
-          <img src={partner} key={partner}></img>
+          <Image
+            src={partner}
+            key={partner}
+            width="100%"
+            height="100%"
+            className={styles.partnersLogo}
+          ></Image>
         ))}
       </div>
     </div>

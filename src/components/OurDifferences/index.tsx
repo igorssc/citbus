@@ -4,14 +4,9 @@ import 'react-multi-carousel/lib/styles.css'
 import sustainabilityEcology from '../../assets/sustainability_ecology.png'
 import styles from './styles.module.scss'
 
-type OurDifferencesProps = {
-  deviceType?: string
-}
-
-export const OurDifferences = (props: OurDifferencesProps) => {
+export const OurDifferences = () => {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 5
     },
@@ -35,7 +30,7 @@ export const OurDifferences = (props: OurDifferencesProps) => {
       <Carousel
         responsive={responsive}
         className={styles.carousel}
-        autoPlay={props.deviceType !== 'mobile' ? true : false}
+        autoPlay={true}
         autoPlaySpeed={5000}
         infinite={true}
       >

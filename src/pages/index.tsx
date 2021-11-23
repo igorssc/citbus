@@ -9,7 +9,7 @@ import { OurPartners } from '../components/OurPartners'
 import { Slide } from '../components/Slide'
 import styles from '../styles/Home.module.scss'
 
-const Home: NextPage = props => {
+const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>

@@ -8,7 +8,7 @@ export const Facebook = () => {
         data-href="https://www.facebook.com/facebook"
         data-tabs="timeline"
         data-width=""
-        data-height=""
+        data-height="500px"
         data-small-header="false"
         data-adapt-container-width="true"
         data-hide-cover="false"

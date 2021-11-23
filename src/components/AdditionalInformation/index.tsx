@@ -35,7 +35,7 @@ export const AdditionalInformation = () => {
         <div>
           <Map />
         </div>
-        <div>
+        <div className={styles.facebook}>
           <Facebook />
         </div>
       </div>

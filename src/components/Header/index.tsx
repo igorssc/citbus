@@ -14,19 +14,19 @@ export const Header = () => {
       </div>
       <div className={styles.optionsMenu}>
         <ul>
-          <Link href="#">
+          <Link href="/" passHref>
             <li className={styles.active}>Home</li>
           </Link>
-          <Link href="#">
+          <Link href="/" passHref>
             <li>Empresa</li>
           </Link>
-          <Link href="#">
+          <Link href="/" passHref>
             <li>Serviços</li>
           </Link>
-          <Link href="#">
+          <Link href="/" passHref>
             <li>Frota</li>
           </Link>
-          <Link href="#">
+          <Link href="/" passHref>
             <li>Contato</li>
           </Link>
         </ul>
