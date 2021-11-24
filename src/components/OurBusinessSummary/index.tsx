@@ -6,16 +6,16 @@ export const OurBusinessSummary = () => {
       <div className={styles.content}>
         <h1>Nosso negócio</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          ut eros auctor, commodo nisi et, commodo lorem. Curabitur commodo
-          tempor quam fermentum interdum. Etiam bibendum dui at elit accumsan
-          facilisis. Maecenas vitae nisl suscipit, elementum purus in, aliquet
-          nisl. Mauris egestas dui non ornare egestas. Aliquam eget lectus eget
-          arcu varius imperdiet in vel arcu. Aliquam erat volutpat. Morbi
-          sodales, ex vel lacinia porta, justo lacus imperdiet tortor, sit amet
-          efficitur ex sapien vitae nisi. Aliquam varius mauris vitae urna
-          sodales, vel hendrerit lorem euismod.
+          Somos referência no mercado de fretamento e turismo, atuando em duas
+          frentes de trabalho:
         </p>
+        <h2>FRETAMENTO CONTÍNUO PARA EMPRESAS</h2>
+        <p>Transporte de funcionários para empresas</p>
+        <h2>FRETAMENTO EVENTUAL</h2>
+        <p>Viagens para pessoa física ou jurídica</p>
+        <p>Translado entre aeroporto e hotéis</p>
+        <p>Transporte de pequenas cargas dentro do Estado</p>
+        <p>Eventos corporativos, escolares, turismo, lazer, etc</p>
       </div>
     </div>
   )

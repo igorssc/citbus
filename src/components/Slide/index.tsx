@@ -5,7 +5,8 @@ import styles from './styles.module.scss'
 export const Slide = () => {
   const fadeImages = [
     './images/slide/slide-1.png',
-    './images/slide/slide-1.png'
+    './images/slide/slide-2.jpg',
+    './images/slide/slide-3.jpg'
   ]
 
   return (
@@ -16,6 +17,9 @@ export const Slide = () => {
         </div>
         <div className="each-fade">
           <img src={fadeImages[1]} className={styles.slide} />
+        </div>
+        <div className="each-fade">
+          <img src={fadeImages[2]} className={styles.slide} />
         </div>
       </Fade>
     </div>

@@ -9,15 +9,13 @@ export const MeetOurCompany = () => {
       <div>
         <Image src={Logo} alt="Santa Luzia Fretamento e Turismo" />
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          ut eros auctor, commodo nisi et, commodo lorem. Curabitur commodo
-          tempor quam fermentum interdum. Etiam bibendum dui at elit accumsan
-          facilisis. Maecenas vitae nisl suscipit, elementum purus in, aliquet
-          nisl. Mauris egestas dui non ornare egestas. Aliquam eget lectus eget
-          arcu varius imperdiet in vel arcu. Aliquam erat volutpat. Morbi
-          sodales, ex vel lacinia porta, justo lacus imperdiet tortor, sit amet
-          efficitur ex sapien vitae nisi. Aliquam varius mauris vitae urna
-          sodales, vel hendrerit lorem euismod.
+          Empresa do Grupo Rodap, a Santa Luzia Fretamento e Turismo possui mais
+          de 40 anos de experiência no ramo de transportes, oferecendo aos seus
+          clientes além de qualidade, conforto, segurança e inovação, um serviço
+          personalizado que conta com uma frota completa e submetida a rigorosos
+          critérios de manutenção preventiva, e uma equipe de profissionais
+          capacitada e empenhada em garantir a melhoria contínua na prestação de
+          serviços.
         </p>
       </div>
     </div>
