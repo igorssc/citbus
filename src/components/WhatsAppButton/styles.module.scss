@@ -9,6 +9,10 @@
   border: 2px solid #fff;
   cursor: pointer;
 
+  @media (max-width: 768px) {
+    padding: 15px;
+  }
+
   .icon {
     filter: invert(1);
   }

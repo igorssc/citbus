@@ -4,7 +4,7 @@ import styles from './styles.module.scss'
 
 export const Slide = () => {
   const fadeImages = [
-    './images/slide/slide-1.png',
+    './images/slide/slide-1.jpg',
     './images/slide/slide-2.jpg',
     './images/slide/slide-3.jpg'
   ]
