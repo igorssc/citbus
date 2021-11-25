@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import arrow from '../../assets/up-arrow.svg'
+import arrow from '../../assets/up_arrow.svg'
 import styles from './styles.module.scss'
 
 export const ContactAlert = () => {

@@ -1,0 +1,31 @@
+.container {
+  background: rgba(39, 189, 184, 0.4);
+
+  .content {
+    max-width: 1120px;
+    margin: auto;
+    padding: 200px 0;
+
+    h1 {
+      font-size: 1.6rem;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    button {
+      display: block;
+      margin: auto;
+      padding: 20px 80px;
+      border-radius: 5px;
+      background: rgba(255, 255, 255, 0.4);
+      cursor: pointer;
+      transition: all 0.2s;
+      border: 2px solid #25bdb8;
+
+      &:hover {
+        filter: brightness(0.9);
+        border-radius: 8px;
+      }
+    }
+  }
+}

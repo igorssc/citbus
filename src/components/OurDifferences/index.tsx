@@ -1,6 +1,8 @@
 import Image from 'next/image'
+import React from 'react'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
+import leftArrow from '../../assets/left_arrow.svg'
 import awards from '../../assets/our_differences/awards.png'
 import certifications from '../../assets/our_differences/certifications.png'
 import ourDrivers from '../../assets/our_differences/our_drivers.png'
@@ -9,7 +11,51 @@ import punctuality from '../../assets/our_differences/punctuality.png'
 import security from '../../assets/our_differences/security.png'
 import structure from '../../assets/our_differences/structure.png'
 import sustainabilityEcology from '../../assets/our_differences/sustainability_ecology.png'
+import rightArrow from '../../assets/right_arrow.svg'
 import styles from './styles.module.scss'
+
+const CustomLeftArrow = ({ onClick, ...rest }: any) => {
+  const {
+    onMove,
+    carouselState: { currentSlide, deviceType }
+  } = rest
+  return (
+    <button
+      className={`${styles.arrow} ${styles.left}`}
+      onClick={() => onClick()}
+    >
+      <Image src={leftArrow} />
+    </button>
+  )
+}
+
+const CustomRightArrow = ({ onClick, ...rest }: any) => {
+  const {
+    onMove,
+    carouselState: { currentSlide, deviceType }
+  } = rest
+  return (
+    <button
+      className={`${styles.arrow} ${styles.right}`}
+      onClick={() => onClick()}
+    >
+      <Image src={rightArrow} />
+    </button>
+  )
+}
+
+const CustomLeftArroww = () => {
+  return (
+    <div
+      style={{
+        textAlign: 'center',
+        position: 'relative'
+      }}
+    >
+      <div style={{ position: 'absolute', left: 0 }}>{'<'}</div>
+    </div>
+  )
+}
 
 export const OurDifferences = () => {
   const responsive = {
@@ -39,8 +85,10 @@ export const OurDifferences = () => {
           responsive={responsive}
           className={styles.carousel}
           autoPlay={true}
-          autoPlaySpeed={5000}
+          autoPlaySpeed={4000}
           infinite={true}
+          customLeftArrow={<CustomLeftArrow />}
+          customRightArrow={<CustomRightArrow />}
         >
           <div className={styles.item}>
             <div className={styles.icon}>

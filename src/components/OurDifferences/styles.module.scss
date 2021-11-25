@@ -34,3 +34,23 @@
     }
   }
 }
+
+.arrow {
+  position: absolute;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &.left {
+    left: 0;
+  }
+
+  &.right {
+    right: 0;
+  }
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}

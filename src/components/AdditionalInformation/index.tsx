@@ -13,6 +13,7 @@ export const AdditionalInformation = () => {
           <p>
             Rua Ana Batista da Cruz, nº 850 <br />
             Belo Vale - Santa Luzia/MG <br />
+            <br />
             Telefone: (31) 3517-7601 <br />
             Serviço de Atendimento ao Cliente: 0800 941 9680
           </p>
