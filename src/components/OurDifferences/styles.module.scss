@@ -11,9 +11,17 @@
       font-weight: normal;
       font-size: 1.8rem;
       margin-bottom: 40px;
+
+      @media (max-width: 768px) {
+        font-size: 1.2rem;
+      }
     }
 
     .carousel {
+      @media (max-width: 768px) {
+        margin: auto 10px;
+      }
+
       .item {
         padding: 0 20px;
 
@@ -26,6 +34,10 @@
       h1 {
         font-size: 1.3rem;
         margin: 30px auto;
+
+        @media (max-width: 768px) {
+          font-size: 1.1rem;
+        }
       }
 
       p {

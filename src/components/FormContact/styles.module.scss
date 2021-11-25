@@ -16,6 +16,10 @@
       font-weight: normal;
       font-size: 1.8rem;
       margin-bottom: 80px;
+
+      @media (max-width: 768px) {
+        font-size: 1.2rem;
+      }
     }
 
     form {
