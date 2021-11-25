@@ -8,7 +8,7 @@ const NotFound: NextPage = () => {
       <div className={styles.content}>
         <h1>:( Ops...</h1>
         <h1>Não conseguimos encontrar a página que você procura</h1>
-        <Link href="/">
+        <Link href="/" passHref>
           <button>Página inicial</button>
         </Link>
       </div>

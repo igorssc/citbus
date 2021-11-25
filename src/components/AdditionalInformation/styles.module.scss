@@ -1,13 +1,22 @@
 .container {
   background: #25bdb8;
-  padding: 20px 0;
+  padding: 20px 20px;
 
   .content {
     width: 1300px;
+    max-width: 100%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+
+      > div:nth-child(1) {
+        order: 3;
+      }
+    }
 
     > div:nth-child(1) {
       h2 {

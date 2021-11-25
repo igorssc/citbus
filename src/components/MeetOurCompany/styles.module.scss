@@ -14,9 +14,9 @@
     margin: 50px 5px;
     justify-content: center;
 
-    img {
-      max-width: 100%;
-      object-fit: contain;
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 50px;
     }
 
     p {
