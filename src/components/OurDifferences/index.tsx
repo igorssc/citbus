@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import React from 'react'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
 import leftArrow from '../../assets/left_arrow.svg'
@@ -14,11 +13,8 @@ import sustainabilityEcology from '../../assets/our_differences/sustainability_e
 import rightArrow from '../../assets/right_arrow.svg'
 import styles from './styles.module.scss'
 
-const CustomLeftArrow = ({ onClick, ...rest }: any) => {
-  const {
-    onMove,
-    carouselState: { currentSlide, deviceType }
-  } = rest
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const CustomLeftArrow = ({ onClick }: any) => {
   return (
     <button
       className={`${styles.arrow} ${styles.left}`}
@@ -29,11 +25,8 @@ const CustomLeftArrow = ({ onClick, ...rest }: any) => {
   )
 }
 
-const CustomRightArrow = ({ onClick, ...rest }: any) => {
-  const {
-    onMove,
-    carouselState: { currentSlide, deviceType }
-  } = rest
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const CustomRightArrow = ({ onClick }: any) => {
   return (
     <button
       className={`${styles.arrow} ${styles.right}`}
@@ -41,19 +34,6 @@ const CustomRightArrow = ({ onClick, ...rest }: any) => {
     >
       <Image src={rightArrow} />
     </button>
-  )
-}
-
-const CustomLeftArroww = () => {
-  return (
-    <div
-      style={{
-        textAlign: 'center',
-        position: 'relative'
-      }}
-    >
-      <div style={{ position: 'absolute', left: 0 }}>{'<'}</div>
-    </div>
   )
 }
 
