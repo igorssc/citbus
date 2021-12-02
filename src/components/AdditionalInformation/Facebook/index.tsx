@@ -5,7 +5,7 @@ export const Facebook = () => {
     <div className={styles.container}>
       <div
         className={`${styles.facebookPage} fb-page`}
-        data-href="https://www.facebook.com/facebook"
+        data-href="https://www.facebook.com/slfretamento"
         data-tabs="timeline"
         data-width="500"
         // data-height="500"
@@ -16,10 +16,10 @@ export const Facebook = () => {
         data-lazy="true"
       >
         <blockquote
-          cite="https://www.facebook.com/facebook"
+          cite="https://www.facebook.com/slfretamento"
           className="fb-xfbml-parse-ignore"
         >
-          <a href="https://www.facebook.com/facebook">Citbus</a>
+          <a href="https://www.facebook.com/slfretamento">Citbus</a>
         </blockquote>
       </div>
     </div>

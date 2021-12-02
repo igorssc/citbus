@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Logo from '../../assets/logo.png'
+import ourFleet from '../../assets/our_fleet.jpg'
 import styles from './styles.module.scss'
 
 export const MeetOurCompany = () => {
@@ -7,7 +7,7 @@ export const MeetOurCompany = () => {
     <div className={styles.container}>
       <h1>Conheça a Santa Luzia Fretamento e Turismo</h1>
       <div>
-        <Image src={Logo} alt="Santa Luzia Fretamento e Turismo" />
+        <Image src={ourFleet} alt="Santa Luzia Fretamento e Turismo" />
         <p>
           Empresa do Grupo Rodap, a Santa Luzia Fretamento e Turismo possui mais
           de 40 anos de experiência no ramo de transportes, oferecendo aos seus

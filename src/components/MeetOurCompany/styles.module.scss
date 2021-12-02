@@ -22,6 +22,7 @@
     grid-template-columns: 1fr 1fr;
     margin: 50px 5px;
     justify-content: center;
+    gap: 40px;
 
     @media (max-width: 768px) {
       grid-template-columns: 1fr;
@@ -32,6 +33,10 @@
     p {
       line-height: 2rem;
       text-align: justify;
+    }
+
+    img {
+      border-radius: 10px;
     }
   }
 }
