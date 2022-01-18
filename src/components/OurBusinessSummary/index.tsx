@@ -2,7 +2,7 @@ import styles from './styles.module.scss'
 
 export const OurBusinessSummary = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="ourBusinessSummary">
       <div className={styles.content}>
         <h1>Nosso negócio</h1>
         <p>

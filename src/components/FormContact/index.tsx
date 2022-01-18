@@ -2,7 +2,7 @@ import styles from './styles.module.scss'
 
 export const FormContact = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="contact">
       <div className={styles.content}>
         <h1>Fale Conosco</h1>
         <form>

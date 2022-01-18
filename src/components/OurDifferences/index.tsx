@@ -52,13 +52,13 @@ export const OurDifferences = () => {
       items: 2
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 768, min: 0 },
       items: 1
     }
   }
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="ourDifferences">
       <div className={styles.content}>
         <h1>Nossos diferenciais</h1>
         <Carousel

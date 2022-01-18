@@ -1,9 +1,13 @@
 import Image from 'next/image'
-import Link from 'next/link'
+import { animateScroll as scroll, Link } from 'react-scroll'
 import logoImg from '../../assets/logo.png'
 import styles from './styles.module.scss'
 
 export const Header = () => {
+  const scrollToTop = () => {
+    scroll.scrollToTop()
+  }
+
   return (
     <header className={styles.container}>
       <div className={styles.logo}>
@@ -14,19 +18,43 @@ export const Header = () => {
       </div>
       <div className={styles.optionsMenu}>
         <ul>
-          <Link href="/" passHref>
-            <li className={styles.active}>Home</li>
-          </Link>
-          <Link href="/" passHref>
+          <li className={styles.active} onClick={scrollToTop}>
+            Home
+          </li>
+          <Link
+            to="meetOurCompany"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
             <li>Empresa</li>
           </Link>
-          <Link href="/" passHref>
+          <Link
+            to="ourBusinessSummary"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
             <li>Serviços</li>
           </Link>
-          <Link href="/" passHref>
-            <li>Frota</li>
+          <Link
+            to="ourDifferences"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            <li>Diferenciais</li>
           </Link>
-          <Link href="/" passHref>
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
             <li>Contato</li>
           </Link>
         </ul>

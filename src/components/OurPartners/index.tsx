@@ -8,16 +8,7 @@ export const OurPartners = () => {
     '/images/partnes/partner-03.jpg',
     '/images/partnes/partner-04.jpg',
     '/images/partnes/partner-05.jpg',
-    '/images/partnes/partner-06.jpg',
-    '/images/partnes/partner-07.jpg',
-    '/images/partnes/partner-08.jpg',
-    '/images/partnes/partner-09.jpg',
-    '/images/partnes/partner-10.jpg',
-    '/images/partnes/partner-11.jpg',
-    '/images/partnes/partner-12.jpg',
-    '/images/partnes/partner-13.jpg',
-    '/images/partnes/partner-14.jpg',
-    '/images/partnes/partner-15.jpg'
+    '/images/partnes/partner-06.jpg'
   ]
 
   return (

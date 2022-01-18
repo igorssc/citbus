@@ -7,6 +7,10 @@
     margin: auto;
     padding: 80px 0;
 
+    @media (max-width: 1120px) {
+      padding: 80px;
+    }
+
     @media (max-width: 768px) {
       padding: 80px 20px;
     }
