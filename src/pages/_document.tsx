@@ -17,6 +17,7 @@ class Document extends NextDocument {
       <Html lang="pt-br">
         <Head>
           <meta charSet="utf-8" />
+          <meta name="theme-color" content="#25bdb8"></meta>
           <link rel="icon" href="/favicon.ico" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
