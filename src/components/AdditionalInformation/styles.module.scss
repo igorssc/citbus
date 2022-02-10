@@ -9,6 +9,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
+    justify-content: center;
 
     @media (max-width: 1120px) {
       grid-template-columns: 1fr 1fr;
@@ -36,10 +37,17 @@
         }
       }
 
-      div {
+      .logos {
         display: flex;
         flex-direction: column;
         gap: 30px;
+      }
+
+      .socialMedias {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
       }
     }
   }

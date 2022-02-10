@@ -4,7 +4,12 @@ import styles from './styles.module.scss'
 
 export const WhatsAppButton = () => {
   return (
-    <div className={styles.container}>
+    <a
+      className={styles.container}
+      href="https://api.whatsapp.com/send?phone=5531991207600"
+      target="_blank"
+      rel="noreferrer"
+    >
       <Image
         src={whatsappIcon}
         alt="WhatsApp"
@@ -12,6 +17,6 @@ export const WhatsAppButton = () => {
         height="35px"
         className={styles.icon}
       />
-    </div>
+    </a>
   )
 }

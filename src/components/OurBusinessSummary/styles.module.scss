@@ -9,13 +9,14 @@
 
     @media (max-width: 768px) {
       padding: 80px 20px;
-      text-align: justify;
     }
 
     h1 {
       font-weight: normal;
       font-size: 1.8rem;
       margin-bottom: 40px;
+      font-weight: bold;
+      text-transform: uppercase;
 
       @media (max-width: 768px) {
         font-size: 1.2rem;

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { animateScroll as scroll, Link } from 'react-scroll'
-import logoImg from '../../assets/logo.png'
+import logoImg from '../../../assets/logo.png'
 import styles from './styles.module.scss'
 
 export const Header = () => {

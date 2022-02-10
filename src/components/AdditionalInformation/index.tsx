@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import facebookIcon from '../../assets/facebook.svg'
+import instagramIcon from '../../assets/instagram.svg'
 import logoRodap from '../../assets/logo_rodap.png'
 import iso9001 from '../../assets/selo_ISO_9001_2015.png'
 import { Facebook } from './Facebook'
@@ -18,7 +20,7 @@ export const AdditionalInformation = () => {
             Serviço de Atendimento ao Cliente: 0800 941 9680
           </p>
           <h2>Uma empresa do grupo Rodap</h2>
-          <div>
+          <div className={styles.logos}>
             <Image
               src={logoRodap}
               height="400px"
@@ -31,6 +33,32 @@ export const AdditionalInformation = () => {
               objectFit="contain"
               objectPosition="left"
             />
+          </div>
+          <div className={styles.socialMedias}>
+            <a
+              href="https://www.instagram.com/slfretamento"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image
+                src={instagramIcon}
+                alt="Instagram"
+                width="35px"
+                height="35px"
+              />
+            </a>
+            <a
+              href="https://facebook.com/slfretamento"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image
+                src={facebookIcon}
+                alt="Facebook"
+                width="35px"
+                height="35px"
+              />
+            </a>
           </div>
         </div>
         <div>

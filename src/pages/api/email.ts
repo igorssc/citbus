@@ -6,8 +6,8 @@ const sendEmail = async (req: NextApiRequest, res: NextApiResponse) => {
     host: process.env.HOSTMAIL,
     port: 587,
     auth: {
-      user: process.env.USERMAIL, // generated ethereal user
-      pass: process.env.PASSMAIL // generated ethereal password
+      user: process.env.USERMAIL,
+      pass: process.env.PASSMAIL
     }
   })
 

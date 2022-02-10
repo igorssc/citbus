@@ -6,7 +6,8 @@
 
   @media (max-width: 768px) {
     padding: 20px 20px;
-    justify-content: flex-start;
+    justify-content: center;
+    background: linear-gradient(#fff, #25bdb8);
   }
 
   > header {
@@ -21,8 +22,16 @@
 
     div {
       display: flex;
-      align-items: center;
-      gap: 10px;
+
+      @media (max-width: 768px) {
+        justify-content: center;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
     }
   }
 }

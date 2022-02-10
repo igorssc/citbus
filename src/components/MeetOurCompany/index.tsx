@@ -5,7 +5,7 @@ import styles from './styles.module.scss'
 export const MeetOurCompany = () => {
   return (
     <div className={styles.container} id="meetOurCompany">
-      <h1> Conheça a Santa Luzia Fretamento e Turismo</h1>
+      <h1>Conheça a Santa Luzia Fretamento e Turismo</h1>
       <div>
         <Image src={ourFleet} alt="Santa Luzia Fretamento e Turismo" />
         <p>
