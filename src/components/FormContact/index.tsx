@@ -11,8 +11,13 @@ export const FormContact = () => {
         <h1>Fale Conosco</h1>
         <form>
           <div>
-            <input type="text" placeholder="Nome completo" required />
-            <input type="email" placeholder="Email" required />
+            <input
+              type="text"
+              placeholder="Nome completo *"
+              minLength={10}
+              required
+            />
+            <input type="email" placeholder="Email *" required />
             <input
               value={phoneValue}
               onChange={e => setPhoneValue(formatPhone(e.target.value))}
@@ -20,7 +25,7 @@ export const FormContact = () => {
             />
             <select name="assunto" required>
               <option value="" hidden>
-                Assunto
+                Assunto *
               </option>
               <option value="Dúvidas">Dúvidas</option>
               <option value="Orçamentos">Orçamentos</option>
@@ -28,7 +33,7 @@ export const FormContact = () => {
               <option value="Sugestões">Sugestões</option>
             </select>
             <textarea
-              placeholder="Mensagem"
+              placeholder="Mensagem *"
               rows={8}
               required
               minLength={15}
