@@ -8,12 +8,16 @@ export const FormContact = () => {
         <form>
           <div>
             <input type="text" placeholder="Nome completo" />
-            <input type="text" placeholder="email" />
-            <input type="text" placeholder="telefone" />
+            <input type="text" placeholder="Email" />
+            <input type="text" placeholder="Telefone" />
             <select name="assunto">
-              <option value="assunto 1">Assunto 1</option>
-              <option value="assunto 2">Assunto 2</option>
-              <option value="assunto 3">Assunto 3</option>
+              <option selected disabled>
+                Assunto
+              </option>
+              <option value="Dúvidas">Dúvidas</option>
+              <option value="Orçamentos">Orçamentos</option>
+              <option value="Reclamações">Reclamações</option>
+              <option value="Sugestões">Sugestões</option>
             </select>
             <textarea placeholder="Mensagem" rows={8}></textarea>
           </div>

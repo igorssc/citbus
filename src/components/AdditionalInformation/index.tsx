@@ -21,19 +21,10 @@ export const AdditionalInformation = () => {
           </p>
           <h2>Uma empresa do grupo Rodap</h2>
           <div className={styles.logos}>
-            <Image
-              src={logoRodap}
-              height="400px"
-              objectFit="contain"
-              objectPosition="left"
-            />
-            <Image
-              src={iso9001}
-              height="400px"
-              objectFit="contain"
-              objectPosition="left"
-            />
+            <Image src={logoRodap} height="400px" objectFit="contain" />
+            <Image src={iso9001} height="400px" objectFit="contain" />
           </div>
+          <h2>Nos sigam em nossas redes sociais:</h2>
           <div className={styles.socialMedias}>
             <a
               href="https://www.instagram.com/slfretamento"
@@ -43,8 +34,9 @@ export const AdditionalInformation = () => {
               <Image
                 src={instagramIcon}
                 alt="Instagram"
-                width="35px"
-                height="35px"
+                width="40px"
+                height="40px"
+                objectFit="contain"
               />
             </a>
             <a
@@ -55,8 +47,9 @@ export const AdditionalInformation = () => {
               <Image
                 src={facebookIcon}
                 alt="Facebook"
-                width="35px"
-                height="35px"
+                width="40px"
+                height="40px"
+                objectFit="contain"
               />
             </a>
           </div>
