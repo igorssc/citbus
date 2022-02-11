@@ -15,7 +15,11 @@ export const ContactDetails = () => {
           </a>
         </div>
         <div>
-          <a href="tel:+55 31 99120-7600">
+          <a
+            href="https://api.whatsapp.com/send?phone=5531991207600"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Image src={whatsappIcon} alt="WhatsApp" />
             <span>(31) 99120-7600</span>
           </a>

@@ -11,24 +11,26 @@ const sendEmail = async (req: NextApiRequest, res: NextApiResponse) => {
     }
   })
 
+  const data = JSON.parse(req.body)
+
   await transporter
     .sendMail({
       from: `Formulário Web <${process.env.USERMAIL}>`,
       to: 'contato@igsdesign.com.br',
-      replyTo: req.body.email,
-      subject: req.body.subject,
-      text: req.body.message,
+      replyTo: data.email,
+      subject: data.subject,
+      text: data.message,
       html: `
       
-      <b>Nome: </b> ${req.body.name},
+      <b>Nome: </b> ${data.name},
       <br>
-      <b>Email: </b> ${req.body.email},
+      <b>Email: </b> ${data.email},
       <br>
-      ${req.body.phone ? `<b>Telefone: </b> ${req.body.phone},` : ''}
+      ${data.phone ? `<b>Telefone: </b> ${data.phone},` : ''}
 
       <br><br>
 
-      ${req.body.message}
+      ${data.message}
       
       `
     })
