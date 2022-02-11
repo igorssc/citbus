@@ -39,6 +39,11 @@ export const FormContact = () => {
       })
         .then(() => {
           handleClickSnackbarVariant('Mensagem enviada com sucesso!', 'success')
+          setNameValue('')
+          setEmailValue('')
+          setPhoneValue('')
+          setSubjectValue('')
+          setMessageValue('')
         })
         .catch(() =>
           handleClickSnackbarVariant('Erro ao enviar a mensagem', 'error')
