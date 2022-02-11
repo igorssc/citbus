@@ -37,13 +37,20 @@ export const FormContact = () => {
         method: 'POST',
         body: JSON.stringify(body)
       })
-        .then(() => {
-          handleClickSnackbarVariant('Mensagem enviada com sucesso!', 'success')
-          setNameValue('')
-          setEmailValue('')
-          setPhoneValue('')
-          setSubjectValue('')
-          setMessageValue('')
+        .then(response => {
+          if (response.status === 200) {
+            handleClickSnackbarVariant(
+              'Mensagem enviada com sucesso!',
+              'success'
+            )
+            setNameValue('')
+            setEmailValue('')
+            setPhoneValue('')
+            setSubjectValue('')
+            setMessageValue('')
+          } else {
+            handleClickSnackbarVariant('Erro ao enviar a mensagem', 'error')
+          }
         })
         .catch(() =>
           handleClickSnackbarVariant('Erro ao enviar a mensagem', 'error')

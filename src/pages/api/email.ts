@@ -11,7 +11,22 @@ const sendEmail = async (req: NextApiRequest, res: NextApiResponse) => {
     }
   })
 
-  const data = JSON.parse(req.body)
+  const data = typeof req.body === 'string' ? JSON.parse(req.body) : req.body
+
+  if (data === undefined) {
+    throw new Error()
+  }
+
+  if (
+    !(
+      'name' in data &&
+      'email' in data &&
+      'subject' in data &&
+      'message' in data
+    )
+  ) {
+    throw new Error()
+  }
 
   await transporter
     .sendMail({
