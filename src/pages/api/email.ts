@@ -8,6 +8,10 @@ const sendEmail = async (req: NextApiRequest, res: NextApiResponse) => {
     auth: {
       user: process.env.USERMAIL,
       pass: process.env.PASSMAIL
+    },
+    tls: {
+      rejectUnauthorized: false,
+      ciphers: 'SSLv3'
     }
   })
 
