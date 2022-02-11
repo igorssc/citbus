@@ -27,7 +27,11 @@ const sendEmail = async (req: NextApiRequest, res: NextApiResponse) => {
       'email' in data &&
       'subject' in data &&
       'message' in data
-    )
+    ) ||
+    data.name.length < 10 ||
+    data.email.length < 5 ||
+    data.subject.length < 5 ||
+    data.message.length < 10
   ) {
     throw new Error()
   }
@@ -41,17 +45,17 @@ const sendEmail = async (req: NextApiRequest, res: NextApiResponse) => {
       text: data.message,
       html: `
       
-      <b>Nome: </b> ${data.name},
-      <br>
-      <b>Email: </b> ${data.email},
-      <br>
-      ${data.phone ? `<b>Telefone: </b> ${data.phone},` : ''}
-
-      <br><br>
-
-      ${data.message}
-      
-      `
+        <b>Nome: </b> ${data.name},
+        <br>
+        <b>Email: </b> ${data.email},
+        <br>
+        ${data.phone ? `<b>Telefone: </b> ${data.phone},` : ''}
+        
+        <br><br>
+        
+        ${data.message}
+        
+        `
     })
     .then(response => {
       res.send(response)
