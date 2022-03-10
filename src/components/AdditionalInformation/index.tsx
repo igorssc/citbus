@@ -13,8 +13,8 @@ export const AdditionalInformation = () => {
       <div className={styles.content}>
         <div>
           <p>
-            Rua Ana Batista da Cruz, nº 850 <br />
-            Belo Vale - Santa Luzia/MG <br />
+            Av. das Indústrias, nº 680, Sala 103 <br />
+            Vila Olga - Santa Luzia/MG - 33.030-510 <br />
             <br />
             Telefone: (31) 3517-7601 <br />
             Serviço de Atendimento ao Cliente: 0800 941 9680
