@@ -28,11 +28,36 @@ class Document extends NextDocument {
             href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
             rel="stylesheet"
           ></link>
+          <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://js.api.here.com/v3/3.1/mapsjs-ui.css"
+          />
+
+          <script
+            type="text/javascript"
+            src="https://js.api.here.com/v3/3.1/mapsjs-core.js"
+            defer
+          ></script>
+          <script
+            type="text/javascript"
+            src="https://js.api.here.com/v3/3.1/mapsjs-service.js"
+            defer
+          ></script>
+          <script
+            type="text/javascript"
+            src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"
+            defer
+          ></script>
+          <script
+            type="text/javascript"
+            src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"
+            defer
+          ></script>
         </Head>
         <body>
           <div id="fb-root"></div>
           <script
-            async
             defer
             crossOrigin="anonymous"
             src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v12.0"
