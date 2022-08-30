@@ -39,7 +39,7 @@ const sendEmail = async (req: NextApiRequest, res: NextApiResponse) => {
   await transporter
     .sendMail({
       from: `Formulário Web <${process.env.USERMAIL}>`,
-      to: 'contato@igsdesign.com.br',
+      to: process.env.USERMAIL,
       replyTo: data.email,
       subject: data.subject,
       text: data.message,
