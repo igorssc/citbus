@@ -29,7 +29,7 @@ const sendEmail = async (req: NextApiRequest, res: NextApiResponse) => {
       'message' in data
     ) ||
     data.name.length < 10 ||
-    data.email.length < 5 ||
+    data.email.length < 10 ||
     data.subject.length < 5 ||
     data.message.length < 10
   ) {
@@ -43,19 +43,35 @@ const sendEmail = async (req: NextApiRequest, res: NextApiResponse) => {
       replyTo: data.email,
       subject: data.subject,
       text: data.message,
-      html: `
-      
-        <b>Nome: </b> ${data.name},
-        <br>
-        <b>Email: </b> ${data.email},
-        <br>
-        ${data.phone ? `<b>Telefone: </b> ${data.phone},` : ''}
-        
-        <br><br>
-        
-        ${data.message}
-        
-        `
+      html: ` 
+      <div
+        style="
+          padding: 20px;
+          background: #199ada;
+          color: #fff;
+          line-height: 2rem
+        "
+      >
+        <h1 style="margin-bottom: 20px; font-size: 1.8rem">Formulário Web</h1>
+        <p>
+          <strong>Nome: </strong>${data.name}
+          <br />
+          <strong>E-mail: </strong>${data.email}
+          ${
+            data.phone
+              ? `<br />
+          <strong>Telefone: </strong>${data.phone}`
+              : ''
+          }
+          <br />
+          <strong>Assunto: </strong>${data.subject}
+        </p>
+      </div>
+      <p style="padding: 20px; line-height: 2rem">${data.message.replaceAll(
+        '\n',
+        '<br/>'
+      )}</p>
+    `
     })
     .then(response => {
       res.send(response)
