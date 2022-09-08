@@ -143,7 +143,7 @@ const sendEmail = async (req: NextApiRequest, res: NextApiResponse) => {
       from: `Formulário Web <${process.env.USERMAIL}>`,
       to: data.email,
       replyTo: process.env.USERMAIL,
-      subject: `Confirmação de contato ${data.subject}`,
+      subject: `Confirmação de contato`,
       text: 'Olá, recebemos sua mensagem, pedimos que aguarde até que nossa equipe possa visualizar e respondê-la',
       html: emailResponseBody
     })
