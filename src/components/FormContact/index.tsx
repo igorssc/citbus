@@ -23,11 +23,54 @@ export const FormContact = () => {
 
   const sendEmail = async () => {
     const body = {
-      name: nameValue,
-      email: emailValue,
-      phone: phoneValue,
+      name: nameValue.trim(),
+      email: emailValue.trim().toLowerCase(),
+      phone: phoneValue.trim(),
       subject: subjectValue,
-      message: messageValue
+      message: messageValue.trim()
+    }
+
+    if (body.name.split(' ').length < 2) {
+      handleClickSnackbarVariant(
+        'Insira seu nome completo, por favor',
+        'warning'
+      )
+      document.getElementById('name')?.focus()
+      return
+    }
+    if (
+      !body.email.match(
+        // eslint-disable-next-line no-useless-escape
+        /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      )
+    ) {
+      handleClickSnackbarVariant(
+        'Insira um e-mail válido, por favor',
+        'warning'
+      )
+      document.getElementById('email')?.focus()
+      return
+    }
+    if (body.phone.length < 14) {
+      handleClickSnackbarVariant(
+        'Insira seu telefone completo, com DDD, por favor',
+        'warning'
+      )
+      document.getElementById('phone')?.focus()
+      return
+    }
+    if (body.message.length < 10) {
+      handleClickSnackbarVariant(
+        'Sua mensagem deve conter ao menos 10 caracteres',
+        'warning'
+      )
+      document.getElementById('message')?.focus()
+      return
+    }
+    if (!body.subject) {
+      handleClickSnackbarVariant('Selecione um assunto, por favor', 'warning')
+      document.getElementById('subject')?.focus()
+      return
     }
 
     handleOpenBackdrop()
@@ -70,26 +113,26 @@ export const FormContact = () => {
             <input
               type="text"
               placeholder="Nome completo *"
-              minLength={10}
-              required
+              id="name"
               value={nameValue}
               onChange={e => setNameValue(e.target.value)}
             />
             <input
               type="email"
               placeholder="Email *"
-              required
+              id="email"
               value={emailValue}
               onChange={e => setEmailValue(e.target.value)}
             />
             <input
+              id="phone"
               value={phoneValue}
               onChange={e => setPhoneValue(formatPhone(e.target.value))}
               placeholder="Telefone"
             />
             <select
               name="assunto"
-              required
+              id="subject"
               value={subjectValue}
               onChange={e => setSubjectValue(e.target.value)}
             >
@@ -104,8 +147,7 @@ export const FormContact = () => {
             <textarea
               placeholder="Mensagem *"
               rows={8}
-              required
-              minLength={15}
+              id="message"
               value={messageValue}
               onChange={e => setMessageValue(e.target.value)}
             ></textarea>
